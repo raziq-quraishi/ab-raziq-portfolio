@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Family";
+  src: url("./fonts/Family400.otf");
+}
+header {
+  h1 {
+    font-family: "Family", serif;
+    text-transform: uppercase !important;
+  }
+}

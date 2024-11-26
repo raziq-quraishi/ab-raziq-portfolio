@@ -27,18 +27,18 @@ const Nav = () => {
     setTheme(!theme)
   }
   return (
-    <header className=" bg-darkGreen text-white">
-      <nav className="  flex items-center justify-between gap-5 max-w-screen-lg mx-auto py-3 ">
-        <h1 className="text-2xl font-bold mr-auto">ARQ</h1>
+    <header className="bg-thirdGreen  flex items-center gap-5 px-10">
+      <Link href="#"><h1 className="text-white hover:text-textColor text-2xl font-bold mr-auto text-uppercase uppercase">Quraishi</h1></Link>
+      <nav className="flex items-center justify-between gap-5 max-w-screen-lg mx-auto py-3">
         {
           links.map((link, index) => {
-            return (<Link key={index} href={link.href}>{link.label}</Link>)
+            return (<Link className="text-white hover:text-textColor font-semibold " key={index} href={link.href}>{link.label}</Link>)
           }
           )
         }
-        <button>Resume</button>
-        <button onClick={changeTheme}>{theme ? <CiLight className="text-3xl" /> : <CiDark className="text-3xl" />}</button>
       </nav>
+      <button className="text-white hover:text-textColor">Resume</button>
+      <button onClick={changeTheme} className="text-white hover:text-textColor">{theme ? <CiLight className="text-3xl" /> : <CiDark className="text-3xl" />}</button>
     </header>
   );
 };
