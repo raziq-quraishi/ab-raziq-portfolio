@@ -32,7 +32,7 @@ const Nav = () => {
         <h1 className="text-2xl font-bold mr-auto">ARQ</h1>
         {
           links.map((link, index) => {
-            return (<Link href={link.href}>{link.label}</Link>)
+            return (<Link key={index} href={link.href}>{link.label}</Link>)
           }
           )
         }
