@@ -5,7 +5,7 @@
   font-family: "Family";
   src: url("./fonts/Family400.otf");
 }
-header {
+nav {
   h1 {
     font-family: "Family", serif;
     text-transform: uppercase !important;
