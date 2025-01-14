@@ -1,8 +1,6 @@
 
+import Layout from "./components/Layout";
 import "./globals.css";
-import Nav from "./components/Nav";
-
-
 export const metadata = {
   title: "Quraishi",
   description: "Abdul Raziq Quraishi Frontend Developer Portfolio",
@@ -11,11 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className=""
-      >
-        <Nav />
-        {children}
+      <body>
+        <Layout>
+          {children}
+
+        </Layout>
       </body>
     </html>
   );
